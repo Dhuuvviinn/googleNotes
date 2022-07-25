@@ -1,0 +1,46 @@
+.main_note {
+  width: 16%;
+
+  margin: 3rem 3rem;
+}
+.main_note form {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 25rem;
+  height: 10rem;
+  border: none;
+  margin-top: 3rem;
+  box-shadow: 1px 1px 11px 2px #aaaaaa;
+}
+.main_note form input {
+  width: 98%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+}
+.main_note form textarea {
+  border: 1px solid grey;
+  outline: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+.main_note form button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: transparent;
+}
+
+.main_note form .forsize {
+  width: 80%;
+  height: 80%;
+  color: gray;
+  cursor: pointer;
+  color: rgb(233 163 35);
+}

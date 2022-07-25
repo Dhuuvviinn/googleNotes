@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Createnotes from './components/Createnotes';
+import Notes from './components/Notes';
+import { useState } from 'react';
 function App() {
+  const [notesitem, setNotesitems] = useState([]);
+  const addNote = (notes) => {
+    setNotesitems((predata) => {
+      return [...predata, notes];
+    });
+    // console.log(notes);
+  };
+  const dDnotes = (id) => {
+    setNotesitems((olddata) => {
+      return olddata.filter((currE, index) => {
+        console.log(currE, index);
+        return index !== id;
+      });
+    });
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Createnotes passnote={addNote} />
+      {/* <Notes /> */}
+      <div className='forflex'>
+        {notesitem.map((val, index) => {
+          return (
+            <Notes
+              key={index}
+              id={index}
+              title={val.title}
+              content={val.content}
+              deleteN={dDnotes}
+            />
+          );
+        })}
+      </div>
+      <Footer />
+    </>
   );
 }
 
