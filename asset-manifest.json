@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/googleNotes/static/css/main.6ae40395.css",
+    "main.js": "/googleNotes/static/js/main.16577814.js",
+    "static/js/787.8ceb965d.chunk.js": "/googleNotes/static/js/787.8ceb965d.chunk.js",
+    "index.html": "/googleNotes/index.html",
+    "main.6ae40395.css.map": "/googleNotes/static/css/main.6ae40395.css.map",
+    "main.16577814.js.map": "/googleNotes/static/js/main.16577814.js.map",
+    "787.8ceb965d.chunk.js.map": "/googleNotes/static/js/787.8ceb965d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ae40395.css",
+    "static/js/main.16577814.js"
+  ]
+}
